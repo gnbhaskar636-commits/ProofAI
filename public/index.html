@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProofAI — AI systems change. Proof should not.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="env-layer" aria-hidden="true">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="/assets/twin-cinematic.mp4" type="video/mp4" />
+      </video>
+      <div class="spotlight"></div>
+    </div>
+    <div class="console">
+      <aside class="sidebar">
+        <a class="brand" href="#/" title="ProofAI — Evidence intelligence">
+          <div class="mark">P</div>
+        </a>
+        <nav class="side-nav">
+          <a href="#/" data-nav="overview">Overview</a>
+          <a href="#/twin" data-nav="twin">AI System<br />Twin</a>
+          <a href="#/change" data-nav="change">Changes</a>
+          <a href="#/evidence" data-nav="evidence">Evidence</a>
+          <a href="#/risk" data-nav="risk">Risk<br />Intelligence</a>
+          <a href="#/history" data-nav="history">Audit<br />History</a>
+          <a href="#/copilot" data-nav="copilot">Copilot</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="kicker" id="pageKicker">Console</p>
+            <h1 id="pageTitle">Overview</h1>
+          </div>
+          <div class="top-meta" id="topMeta"></div>
+        </header>
+        <section id="app"></section>
+      </main>
+    </div>
+    <script src="/app.js"></script>
+    <script type="module" src="/twin.js"></script>
+  </body>
+</html>
